@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ben Vance - Software Developer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="navbar">
+            <ul class="left-nav">
+                <li><a href="index.html" style>Home</a></li>
+                <li><a href="#about">Contact Me</a></li>
+            </ul>
+            <div class="nav-name">
+                <p>Ben Vance</p>
+            </div>
+            <hr>
+        </div>
+        <div class='project-body container'>
+            <div class="project-section">
+                <h1 class="project-name"><strong>Daily Words</strong></h1>
+
+                <p>
+                    Daily Words is a chrome extension designed to make learning vocabulary as fun and convenient as possible. Source your own learning material and have translations 
+                    sent to your phone or email every single day. Code for this project can be found <a href="https://github.com/bcvance/DailyWords">here</a>.
+                </p>
+
+                <h2>Configuring your settings</h2>
+                <ol>
+                    <li>
+                        Click on the extension icon in the top right of your browser, then click the three dots next to Daily Words, and then select "options".
+                    </li>
+                    <li>
+                        <p>
+                            When a menu pops up, select where you would like to receive your translations daily. You may choose email, phone, or both. If you would like words to
+                            be sent to your phone, please include your phone number in the input box that will appear upon selecting "phone". You may also indicate how many translations you would like to be sent per day.
+                        </p>
+                        
+                        <img src="./media/options.gif">
+                    </li>
+                    <li>
+                        <p>
+                            Google may ask for authentication as shown below. This is necessary for the extension to have access to your email address and identify the account being used.
+                        </p>
+                        <img src="./media/daily_words_authentication.png">
+                    </li>
+                </ol>
+            </div>
+
+            <div class="project-section">
+                <h2>Using the extension:</h2>
+                <ol>
+                    <li>
+                        <p>
+                            Navigate to article in foreign language of your choosing.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Activate the extension by clicking the extension icon in the top right of your browser, clicking on "Daily Words" and then "activate".
+                        </p>
+                        <img src="./media/activate.gif">
+                    </li>
+                    <li>
+                        <p>
+                            Click on a word or highlight an entire phrase to get a translation. Translations are done using the DeepL API.  
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            To save your translation, click "Save This Word" to save it to the database.
+                        </p>
+                        <img src="media/translate_demonstration.gif">
+                    </li>
+                    <li>
+                        <p>
+                            When you are done reading, repeat step 3 to deactivate the extension.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="project-section">
+                <h2>Receiving words:</h2>
+                <p>
+                    Words will be sent in the below format to the number provided in your extension options. 
+                    In the video below for demonstration purposes the Celery Beat has been altered to send words every 3 seconds.
+                </p>
+                <img id="texts-gif" src="media/texts_resized.gif">
+                
+                <h2>In the works:</h2>
+                <ul>
+                    <li>
+                        <p>
+                            Currently words are sent based on a FIFO (first in first out) queue pattern. That is, the least recently seen words will be sent to your phone or email before
+                            more recent ones. Upon receiving a translation, it gets cycled back to the end of the queue. Currently, a spaced repetition option is in development as well. 
+                            This option would enable users to provide feedback regarding ease of recall for each translation, which would alter the wait time before next review of that word accordingly.  
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Support for additional languages.
+                        </p>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]
+        
+        <script src="" async defer></script>
+    </body>
+</html>

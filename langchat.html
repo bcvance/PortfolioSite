@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ben Vance - Software Developer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="navbar">
+            <ul class="left-nav">
+                <li><a href="index.html" style>Home</a></li>
+                <li><a href="#about">Contact Me</a></li>
+            </ul>
+            <div class="nav-name">
+                <p>Ben Vance</p>
+            </div>
+            <hr>
+        </div>
+        <div class='project-body container'>
+            <div class="project-section">
+                <h1 class="project-name"><strong>LangChat</strong></h1>
+
+                <p>
+                    LangChat is a live chat client designed to make finding a compatible language
+                    partner fast and convenient. Code for this project can be found <a href="https://github.com/bcvance/LangChatReact">here</a>.
+                </p>
+
+                <h2>Features:</h2>
+                <ul>
+                    <li>Language partner matching based on user native and target language</li>
+                    <li>Persistent chat instances and contacts</li>
+                    <li>Individual and group chats</li>
+                    <li>JSON Web Token authentication</li>
+                    <li>Bidirectional client/server communication (Websockets)</li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h2>Using the application:</h2>
+                <ul>
+                    <li>
+                        <p>
+                            If you are a new user to LangChat, create an account, otherwise log in.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            On login, you'll be greeted by the chat client shown below. Here you
+                            will have access to all of your chats and contacts, as well as the ability to
+                            match with new language partners and create new group chats with users in your contacts.
+                        </p>
+                        <img src="./media/langchat_login.gif">
+                    </li>
+                </ul>
+                <h3>Finding new language partners:</h3>
+                <ol>
+                    <li>
+                        <p>
+                            While on the conversations tab, click "New Conversation" to display the new conversation interface.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Select a language that you know and the language that you're learning, and press "find me a partner".
+                            Alternatively, start a conversation or group chat from your contacts.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            If there is an active user who knows the language you are learning who is learning the language that you know,
+                            LangChat will match you and create a chat instance. Otherwise, you will see "Finding partner..." until one is found
+                            or you cancel your search.
+                        </p>
+                        <img src="./media/partner_match.gif">
+                    </li>
+                    <li>
+                        <p>
+                            Save users to contacts by clicking on their username. Once in your contacts, users
+                            can be added to group chats.
+                        </p>
+                        <img src="media/save_contact.gif">
+                    </li>
+                </ol>
+            </div>
+
+            <div class="project-section">
+                <h2>Stack/technology information:</h2>
+
+                <p>
+                    The backend for this application was built using Django, including Django Channels
+                    for Websocket functionality. The frontend was built with React, using the React Context API for 
+                    state management.
+                </p>
+            </div>
+
+            <div class="project-section">
+                <h2>In the works:</h2>
+
+                <ul>
+                    <li>
+                        User profile pages
+                    </li>
+                    <li>
+                        Profile pictures
+                    </li>
+                    <li>Deployment</li>
+                </ul>
+            </div>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]
+        
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ben Vance - Software Developer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="navbar">
+            <ul class="left-nav">
+                <li><a href="index.html" style>Home</a></li>
+                <li><a href="#about">Contact Me</a></li>
+            </ul>
+            <div class="nav-name">
+                <p>Ben Vance</p>
+            </div>
+            <hr>
+        </div>
+        <div class='project-body container'>
+            <div class="project-section">
+                <h1 class="project-name"><strong>MeCommerce</strong></h1>
+
+                <p>
+                    MeCommerce is a mock ecommerce website with full user authentication, paypal integration and 
+                    site admin functionality. Check it out at <a href="https://mecommerce1.herokuapp.com/">mecommerce1.herokuapp.com</a>.
+                    Code for this project can be found <a href="https://github.com/bcvance/ProShopEcommerceV2">here</a>.
+                </p>
+                <div style="margin: auto;"><img class="center" src="./media/mecommerce_home.png"></div>
+
+                <h2>Features:</h2>
+                <ul>
+                    <li>JSON Web Token authentication</li>
+                    <li>Tiered user permissions levels</li>
+                    <li>Product search/filtering</li>
+                    <li>Create delete and edit functionality for products, users, and orders for admin users</li>
+                    <li>Paypal integration</li>
+                    <li>User review and comment functionality</li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h2>Using the application:</h2>
+                <ul>
+                    <li>
+                        <p>
+                            If you are a new user to MeCommerce, create an account, otherwise log in.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Click on a product to see more details
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Add items to cart as you browse
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Pay for order using paypal
+                        </p>
+                    </li>
+                </ul>
+                <h3>Admin panel:</h3>
+                <ol>
+                    <li>
+                        <p>
+                            Create, delete or edit users, products and orders
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Update order delivery status
+                        </p>
+                        <img src="./media/mecommerce_admin.gif">
+                    </li>
+                </ol>
+            </div>
+
+            <div class="project-section">
+                <h2>Stack/technology information:</h2>
+
+                <ul>
+                    <li>Backend: Python/Django</li>
+                    <li>Frontend: React</li>
+                    <li>Redux for state management</li>
+                    <li>Deployment info: AWS for database and static file hosting, deployed on Heroku</li>
+                </ul>
+            </div>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]
+        
+        <script src="" async defer></script>
+    </body>
+</html>
